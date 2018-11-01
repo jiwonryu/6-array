@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define ROWS  3
-#define COLS  3
+#define ROWS 3
+#define COLS 3
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -13,7 +13,7 @@ void printMatrix(int A[][COLS])
 		{
 			for (j=0; j<COLS; j++) 
 			{
-				printf("%d", A[i][j]);
+				printf("%d ", A[i][j]);
 			}
 			printf("\n");
 		}
@@ -28,7 +28,7 @@ int addMatrix(int A[][COLS], int B[][COLS], int C[][COLS])
 	{
 		for (j=0; j<COLS; j++) 
 		{
-			C[i][j]=A[j][i]+B[j][i];
+			C[i][j]=A[i][j]+B[i][j];
 		}
 	}
 	return 1;
